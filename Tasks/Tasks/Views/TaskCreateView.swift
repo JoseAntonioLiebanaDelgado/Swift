@@ -11,6 +11,8 @@ struct TaskCreateView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @State var showAlert = false
+    
     var body: some View {
         NavigationView {
             Form {
@@ -24,14 +26,21 @@ struct TaskCreateView: View {
                 }
               }
             }
+            .alert(isPresented: $showAlert){
+                Alert(title: Text("Error"),
+                      message: Text("Duplicate task title"),
+                      dismissButton: .default(Text("OK")){
+                        self.showAlert.toggle()
+                        self.presentationMode.wrappedValue.dismiss()
+                      })
+            }
             .background(Color(.systemGroupedBackground))
             .navigationBarTitle(Text("Create Task"), displayMode: .inline)
             .navigationBarItems(leading: Button("Cancel"){
                 self.presentationMode.wrappedValue.dismiss()
             }, trailing: Button(action: {
-                // MARK: TO DO SAVE TASK
                 
-                taskStore.addTask(title: title, notes: notes, createdAt: createdAt, isDone: isDone)
+                self.showAlert = !taskStore.addTask(title: title, notes: notes, createdAt: createdAt, isDone: isDone)
                 self.presentationMode.wrappedValue.dismiss()
               }, label: {
                 Text("Save")

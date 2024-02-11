@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Tasks
-//
-//  Created by Alumne on 31/01/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -17,7 +10,16 @@ struct ContentView: View {
             List{
               Section {
                 ForEach(taskStore.taskList, id: \.self) { task in
-                    Text("\(task.title ?? "no title")")
+                    //Text("\(task.title ?? "no title")")
+                    
+                    NavigationLink(destination: TaskDetailView(task: task)) {
+                      HStack {
+                        TaskStatusView(isDone: task.isDone)
+                        Text("\(task.title ?? "")")
+                        Spacer()
+                      }
+                    }
+                    
                 }.onDelete(perform: taskStore.deleteTask(at:))
               }
             }
