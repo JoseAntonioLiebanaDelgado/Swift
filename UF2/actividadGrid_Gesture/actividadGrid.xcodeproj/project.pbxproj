@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF0FFFFF2B98C6DD004A2F3D /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FFFFE2B98C6DD004A2F3D /* ItemDetailView.swift */; };
+		EFB5C3362B8F7F540080AA03 /* actividadGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C3352B8F7F540080AA03 /* actividadGridApp.swift */; };
+		EFB5C3382B8F7F540080AA03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C3372B8F7F540080AA03 /* ContentView.swift */; };
+		EFB5C33A2B8F7F5B0080AA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB5C3392B8F7F5B0080AA03 /* Assets.xcassets */; };
+		EFB5C33D2B8F7F5B0080AA03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB5C33C2B8F7F5B0080AA03 /* Preview Assets.xcassets */; };
+		EFB5C3482B8F7FC80080AA03 /* FetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C3472B8F7FC80080AA03 /* FetchError.swift */; };
+		EFB5C34C2B8F7FFE0080AA03 /* FlickrPhotosSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C34B2B8F7FFE0080AA03 /* FlickrPhotosSearchResponse.swift */; };
+		EFB5C34F2B8F80610080AA03 /* FlickrPhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C34E2B8F80610080AA03 /* FlickrPhotoStore.swift */; };
+		EFB5C3562B8F8B410080AA03 /* BarraBusquedaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C3552B8F8B410080AA03 /* BarraBusquedaView.swift */; };
+		EFB5C35B2B8F8DD70080AA03 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EFB5C35A2B8F8DD70080AA03 /* KingfisherSwiftUI */; };
+		EFB5C35E2B8F93A70080AA03 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C35D2B8F93A70080AA03 /* Cell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF0FFFFE2B98C6DD004A2F3D /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		EFB5C3322B8F7F540080AA03 /* actividadGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = actividadGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB5C3352B8F7F540080AA03 /* actividadGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actividadGridApp.swift; sourceTree = "<group>"; };
+		EFB5C3372B8F7F540080AA03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFB5C3392B8F7F5B0080AA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFB5C33C2B8F7F5B0080AA03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFB5C33E2B8F7F5B0080AA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB5C3472B8F7FC80080AA03 /* FetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchError.swift; sourceTree = "<group>"; };
+		EFB5C34B2B8F7FFE0080AA03 /* FlickrPhotosSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosSearchResponse.swift; sourceTree = "<group>"; };
+		EFB5C34E2B8F80610080AA03 /* FlickrPhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoStore.swift; sourceTree = "<group>"; };
+		EFB5C3552B8F8B410080AA03 /* BarraBusquedaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarraBusquedaView.swift; sourceTree = "<group>"; };
+		EFB5C35D2B8F93A70080AA03 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB5C32F2B8F7F540080AA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB5C35B2B8F8DD70080AA03 /* KingfisherSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFB5C3292B8F7F540080AA03 = {
+			isa = PBXGroup;
+			children = (
+				EFB5C3342B8F7F540080AA03 /* actividadGrid */,
+				EFB5C3332B8F7F540080AA03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB5C3332B8F7F540080AA03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5C3322B8F7F540080AA03 /* actividadGrid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB5C3342B8F7F540080AA03 /* actividadGrid */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5C3542B8F8B2C0080AA03 /* View */,
+				EFB5C3462B8F7FAA0080AA03 /* ViewModel */,
+				EFB5C3452B8F7FA20080AA03 /* Model */,
+				EFB5C3352B8F7F540080AA03 /* actividadGridApp.swift */,
+				EFB5C3392B8F7F5B0080AA03 /* Assets.xcassets */,
+				EFB5C3372B8F7F540080AA03 /* ContentView.swift */,
+				EFB5C33E2B8F7F5B0080AA03 /* Info.plist */,
+				EFB5C33B2B8F7F5B0080AA03 /* Preview Content */,
+			);
+			path = actividadGrid;
+			sourceTree = "<group>";
+		};
+		EFB5C33B2B8F7F5B0080AA03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5C33C2B8F7F5B0080AA03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFB5C3452B8F7FA20080AA03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5C3472B8F7FC80080AA03 /* FetchError.swift */,
+				EFB5C34B2B8F7FFE0080AA03 /* FlickrPhotosSearchResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFB5C3462B8F7FAA0080AA03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5C34E2B8F80610080AA03 /* FlickrPhotoStore.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EFB5C3542B8F8B2C0080AA03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5C3552B8F8B410080AA03 /* BarraBusquedaView.swift */,
+				EFB5C35D2B8F93A70080AA03 /* Cell.swift */,
+				EF0FFFFE2B98C6DD004A2F3D /* ItemDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB5C3312B8F7F540080AA03 /* actividadGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB5C3412B8F7F5B0080AA03 /* Build configuration list for PBXNativeTarget "actividadGrid" */;
+			buildPhases = (
+				EFB5C32E2B8F7F540080AA03 /* Sources */,
+				EFB5C32F2B8F7F540080AA03 /* Frameworks */,
+				EFB5C3302B8F7F540080AA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = actividadGrid;
+			packageProductDependencies = (
+				EFB5C35A2B8F8DD70080AA03 /* KingfisherSwiftUI */,
+			);
+			productName = actividadGrid;
+			productReference = EFB5C3322B8F7F540080AA03 /* actividadGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB5C32A2B8F7F540080AA03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EFB5C3312B8F7F540080AA03 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = EFB5C32D2B8F7F540080AA03 /* Build configuration list for PBXProject "actividadGrid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFB5C3292B8F7F540080AA03;
+			packageReferences = (
+				EFB5C3592B8F8DD70080AA03 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = EFB5C3332B8F7F540080AA03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB5C3312B8F7F540080AA03 /* actividadGrid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFB5C3302B8F7F540080AA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB5C33D2B8F7F5B0080AA03 /* Preview Assets.xcassets in Resources */,
+				EFB5C33A2B8F7F5B0080AA03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB5C32E2B8F7F540080AA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB5C34C2B8F7FFE0080AA03 /* FlickrPhotosSearchResponse.swift in Sources */,
+				EFB5C3562B8F8B410080AA03 /* BarraBusquedaView.swift in Sources */,
+				EFB5C35E2B8F93A70080AA03 /* Cell.swift in Sources */,
+				EFB5C3482B8F7FC80080AA03 /* FetchError.swift in Sources */,
+				EF0FFFFF2B98C6DD004A2F3D /* ItemDetailView.swift in Sources */,
+				EFB5C3382B8F7F540080AA03 /* ContentView.swift in Sources */,
+				EFB5C34F2B8F80610080AA03 /* FlickrPhotoStore.swift in Sources */,
+				EFB5C3362B8F7F540080AA03 /* actividadGridApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFB5C33F2B8F7F5B0080AA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFB5C3402B8F7F5B0080AA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFB5C3422B8F7F5B0080AA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"actividadGrid/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = actividadGrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lasalle.edu.actividadGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFB5C3432B8F7F5B0080AA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"actividadGrid/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = actividadGrid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lasalle.edu.actividadGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB5C32D2B8F7F540080AA03 /* Build configuration list for PBXProject "actividadGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB5C33F2B8F7F5B0080AA03 /* Debug */,
+				EFB5C3402B8F7F5B0080AA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB5C3412B8F7F5B0080AA03 /* Build configuration list for PBXNativeTarget "actividadGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB5C3422B8F7F5B0080AA03 /* Debug */,
+				EFB5C3432B8F7F5B0080AA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFB5C3592B8F8DD70080AA03 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFB5C35A2B8F8DD70080AA03 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFB5C3592B8F8DD70080AA03 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EFB5C32A2B8F7F540080AA03 /* Project object */;
+}
