@@ -2,7 +2,7 @@
 //  Recetas+CoreDataProperties.swift
 //  CookingRecipes
 //
-//  Created by Jose Antonio Liebana Delgado on 6/3/24.
+//  Created by Jose Antonio Liebana Delgado on 11/3/24.
 //
 //
 
@@ -16,11 +16,12 @@ extension Recetas {
         return NSFetchRequest<Recetas>(entityName: "Recetas")
     }
 
-    @NSManaged public var descripcion: String?
-    @NSManaged public var esFavorito: Bool
-    @NSManaged public var imagen: String?
-    @NSManaged public var instrucciones: String?
     @NSManaged public var nombre: String?
+    @NSManaged public var descripcion: String?
+    @NSManaged public var instrucciones: String?
+    @NSManaged public var cantidad: Float
+    @NSManaged public var imagen: String?
+    @NSManaged public var esFavorito: Bool
     @NSManaged public var recetaIngredientes: NSSet?
 
 }

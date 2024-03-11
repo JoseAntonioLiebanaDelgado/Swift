@@ -2,7 +2,7 @@
 //  Ingredientes+CoreDataClass.swift
 //  CookingRecipes
 //
-//  Created by Jose Antonio Liebana Delgado on 6/3/24.
+//  Created by Jose Antonio Liebana Delgado on 11/3/24.
 //
 //
 

@@ -2,7 +2,7 @@
 //  Ingredientes+CoreDataProperties.swift
 //  CookingRecipes
 //
-//  Created by Jose Antonio Liebana Delgado on 6/3/24.
+//  Created by Jose Antonio Liebana Delgado on 11/3/24.
 //
 //
 
@@ -16,8 +16,8 @@ extension Ingredientes {
         return NSFetchRequest<Ingredientes>(entityName: "Ingredientes")
     }
 
-    @NSManaged public var cantidad: Float
     @NSManaged public var nombre: String?
+    @NSManaged public var cantidad: Float
     @NSManaged public var ingredientesRecetas: NSSet?
 
 }
