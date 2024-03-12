@@ -7,20 +7,28 @@
 
 import SwiftUI
 
+// Define una estructura llamada `ContentView` que es una vista en SwiftUI.
 struct ContentView: View {
+    // La propiedad `body` define el contenido de la vista.
     var body: some View {
+        // `VStack` organiza sus vistas hijas en una columna vertical.
         VStack {
+            // Crea una imagen usando un nombre de sistema "globe" y ajusta su tamaño y estilo.
             Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+                .imageScale(.large) // Ajusta el tamaño de la imagen a grande.
+                .foregroundStyle(.tint) // Aplica el color de tinte principal a la imagen.
+            // Crea un texto que muestra "Hello, world!".
             Text("Hello, world!")
-            //LLamar a la vista
-            TapView()
+            // Llama a otra vista personalizada `TapView` y la incluye en la pila vertical.
+            TapView() // Llamar a la vista `TapView`.
         }
-        .padding()
+        .padding() // Aplica relleno alrededor de la pila vertical (`VStack`).
     }
 }
 
-#Preview {
-    ContentView()
+// Define una estructura para previsualizar `ContentView` en Xcode.
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView() // Muestra una previsualización de `ContentView`.
+    }
 }
