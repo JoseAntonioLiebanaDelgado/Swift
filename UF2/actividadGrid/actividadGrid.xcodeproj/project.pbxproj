@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,10 +64,10 @@
 		EFB5C3342B8F7F540080AA03 /* actividadGrid */ = {
 			isa = PBXGroup;
 			children = (
+				EFB5C3352B8F7F540080AA03 /* actividadGridApp.swift */,
 				EFB5C3542B8F8B2C0080AA03 /* View */,
 				EFB5C3462B8F7FAA0080AA03 /* ViewModel */,
 				EFB5C3452B8F7FA20080AA03 /* Model */,
-				EFB5C3352B8F7F540080AA03 /* actividadGridApp.swift */,
 				EFB5C3392B8F7F5B0080AA03 /* Assets.xcassets */,
 				EFB5C3372B8F7F540080AA03 /* ContentView.swift */,
 				EFB5C33E2B8F7F5B0080AA03 /* Info.plist */,
