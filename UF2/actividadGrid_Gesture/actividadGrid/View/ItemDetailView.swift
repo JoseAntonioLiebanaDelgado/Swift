@@ -42,27 +42,28 @@ struct ItemDetailView: View {
         VStack {
             // KFImage carga y muestra una imagen desde una URL usando Kingfisher. La imagen se puede ampliar y se le puede dar doble toque para "me gusta".
             KFImage(item.imageURL!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+                .resizable() // Hace que la imagen sea redimensionable, lo que permite cambiar su tamaño.
+                .aspectRatio(contentMode: .fit) // Mantiene la relación de aspecto de la imagen y la ajusta dentro del marco disponible.
                 .onTapGesture(count: 2) {
-                    // Cambia el estado de 'isLikedPhoto' al dar doble toque.
+                    // Define un gesto de toque con un conteo de 2, es decir, un doble toque.
+                    // Cambia el estado de 'isLikedPhoto' al dar doble toque, lo que indica si la foto es "me gusta" o no.
                     self.isLikedPhoto.toggle()
                 }
-                .scaleEffect(scale) // Aplica el efecto de escala basado en 'scale'.
-                .gesture(magnificationGesture) // Aplica el gesto de magnificación.
+                .scaleEffect(scale) // Aplica un efecto de escala a la imagen, basado en el valor de 'scale'. Útil para el zoom.
+                .gesture(magnificationGesture) // Aplica un gesto de magnificación, que probablemente permita a los usuarios pellizcar para hacer zoom.
                 .overlay(
-                    // Superpone un corazón que indica si la foto es "me gusta" o no.
+                    // Superpone elementos sobre la imagen. En este caso, se añade una capa encima de la imagen.
                     VStack {
                         HStack {
-                            Spacer()
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 30, height: 30)
-                                .foregroundColor(self.isLikedPhoto ? Color.green : Color.gray)
-                                .padding(20)
+                            Spacer() // Empuja el contenido hacia el lado opuesto en una HStack, aquí mueve el corazón a la derecha.
+                            Image(systemName: "heart.fill") // Muestra un icono de corazón lleno.
+                                .resizable() // Hace que el icono de corazón sea redimensionable.
+                                .aspectRatio(contentMode: .fit) // Mantiene la relación de aspecto del icono del corazón y lo ajusta dentro de su marco.
+                                .frame(width: 30, height: 30) // Define el tamaño del marco para el icono del corazón.
+                                .foregroundColor(self.isLikedPhoto ? Color.green : Color.gray) // Cambia el color del corazón a verde si 'isLikedPhoto' es verdadero, de lo contrario es gris.
+                                .padding(20) // Añade un relleno alrededor del icono del corazón, lo que incrementa su área táctil y lo separa de los bordes.
                         }
-                        Spacer()
+                        Spacer() // En una VStack, esto empuja el contenido hacia arriba.
                     }
                 )
             // HStack organiza las siguientes vistas horizontalmente.

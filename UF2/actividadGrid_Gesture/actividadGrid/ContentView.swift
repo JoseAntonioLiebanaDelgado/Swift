@@ -79,8 +79,8 @@ struct ContentView: View {
 }
 
 // Proporciona una vista previa de ContentView dentro del editor de Xcode.
-struct ContentView_Previews: PreviewProvider {
+/*struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
+}*/
