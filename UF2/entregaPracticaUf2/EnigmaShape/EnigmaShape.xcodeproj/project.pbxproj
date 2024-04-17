@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF10EC852BC6E36B00D6CC64 /* siguienteronda.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF10EC842BC6E36B00D6CC64 /* siguienteronda.wav */; };
+		EFE6BC082BAC9813003DDF51 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE6BC072BAC9813003DDF51 /* CellView.swift */; };
+		EFED90A12BA898BE0055154A /* EnigmaShapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90A02BA898BE0055154A /* EnigmaShapeApp.swift */; };
+		EFED90A32BA898BE0055154A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90A22BA898BE0055154A /* ContentView.swift */; };
+		EFED90A52BA898BF0055154A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFED90A42BA898BF0055154A /* Assets.xcassets */; };
+		EFED90A82BA898BF0055154A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFED90A72BA898BF0055154A /* Preview Assets.xcassets */; };
+		EFED90B62BA89A290055154A /* Figura.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90B52BA89A290055154A /* Figura.swift */; };
+		EFED90B92BA89AA10055154A /* TamanoFigura.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90B82BA89AA10055154A /* TamanoFigura.swift */; };
+		EFED90BC2BA89BD50055154A /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90BB2BA89BD50055154A /* GameStore.swift */; };
+		EFED90BF2BA89C070055154A /* Ronda.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90BE2BA89C070055154A /* Ronda.swift */; };
+		EFED90C32BA89DDF0055154A /* FetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90C22BA89DDF0055154A /* FetchError.swift */; };
+		EFED90C62BA8AB3A0055154A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90C52BA8AB3A0055154A /* GameView.swift */; };
+		EFED90C92BA8ABCE0055154A /* AnimacionCargaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90C82BA8ABCE0055154A /* AnimacionCargaView.swift */; };
+		EFED90CC2BA8B5E40055154A /* PartidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90CB2BA8B5E40055154A /* PartidaView.swift */; };
+		EFED90CF2BA8B8DB0055154A /* RondaActualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90CE2BA8B8DB0055154A /* RondaActualView.swift */; };
+		EFED90D32BA8BD480055154A /* BotonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED90D22BA8BD480055154A /* BotonesView.swift */; };
+		EFEE3CC12BAB3E70008187DB /* HistorialRondasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE3CC02BAB3E70008187DB /* HistorialRondasView.swift */; };
+		EFF0394C2BC443330097CFFA /* rondaperdida.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EFF0394A2BC443330097CFFA /* rondaperdida.mp3 */; };
+		EFF0394D2BC443330097CFFA /* rondaganada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EFF0394B2BC443330097CFFA /* rondaganada.mp3 */; };
+		EFF039502BC447320097CFFA /* SoundGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0394F2BC447320097CFFA /* SoundGame.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF10EC842BC6E36B00D6CC64 /* siguienteronda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = siguienteronda.wav; sourceTree = "<group>"; };
+		EFE6BC072BAC9813003DDF51 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		EFED909D2BA898BE0055154A /* EnigmaShape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnigmaShape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFED90A02BA898BE0055154A /* EnigmaShapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaShapeApp.swift; sourceTree = "<group>"; };
+		EFED90A22BA898BE0055154A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFED90A42BA898BF0055154A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFED90A72BA898BF0055154A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFED90A92BA898BF0055154A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFED90B52BA89A290055154A /* Figura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figura.swift; sourceTree = "<group>"; };
+		EFED90B82BA89AA10055154A /* TamanoFigura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamanoFigura.swift; sourceTree = "<group>"; };
+		EFED90BB2BA89BD50055154A /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		EFED90BE2BA89C070055154A /* Ronda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ronda.swift; sourceTree = "<group>"; };
+		EFED90C22BA89DDF0055154A /* FetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchError.swift; sourceTree = "<group>"; };
+		EFED90C52BA8AB3A0055154A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		EFED90C82BA8ABCE0055154A /* AnimacionCargaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimacionCargaView.swift; sourceTree = "<group>"; };
+		EFED90CB2BA8B5E40055154A /* PartidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidaView.swift; sourceTree = "<group>"; };
+		EFED90CE2BA8B8DB0055154A /* RondaActualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RondaActualView.swift; sourceTree = "<group>"; };
+		EFED90D22BA8BD480055154A /* BotonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotonesView.swift; sourceTree = "<group>"; };
+		EFEE3CC02BAB3E70008187DB /* HistorialRondasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialRondasView.swift; sourceTree = "<group>"; };
+		EFF0394A2BC443330097CFFA /* rondaperdida.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rondaperdida.mp3; sourceTree = "<group>"; };
+		EFF0394B2BC443330097CFFA /* rondaganada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rondaganada.mp3; sourceTree = "<group>"; };
+		EFF0394F2BC447320097CFFA /* SoundGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundGame.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFED909A2BA898BE0055154A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFED90942BA898BE0055154A = {
+			isa = PBXGroup;
+			children = (
+				EFED909F2BA898BE0055154A /* EnigmaShape */,
+				EFED909E2BA898BE0055154A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFED909E2BA898BE0055154A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFED909D2BA898BE0055154A /* EnigmaShape.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFED909F2BA898BE0055154A /* EnigmaShape */ = {
+			isa = PBXGroup;
+			children = (
+				EFF039492BC4431F0097CFFA /* Sounds */,
+				EFED90B22BA899840055154A /* Views */,
+				EFED90B12BA8997E0055154A /* Model */,
+				EFED90B02BA899740055154A /* ViewModel */,
+				EFED90A02BA898BE0055154A /* EnigmaShapeApp.swift */,
+				EFED90A22BA898BE0055154A /* ContentView.swift */,
+				EFED90A42BA898BF0055154A /* Assets.xcassets */,
+				EFED90A92BA898BF0055154A /* Info.plist */,
+				EFED90A62BA898BF0055154A /* Preview Content */,
+			);
+			path = EnigmaShape;
+			sourceTree = "<group>";
+		};
+		EFED90A62BA898BF0055154A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFED90A72BA898BF0055154A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFED90B02BA899740055154A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFED90BB2BA89BD50055154A /* GameStore.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EFED90B12BA8997E0055154A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFED90B52BA89A290055154A /* Figura.swift */,
+				EFED90B82BA89AA10055154A /* TamanoFigura.swift */,
+				EFED90BE2BA89C070055154A /* Ronda.swift */,
+				EFED90C22BA89DDF0055154A /* FetchError.swift */,
+				EFF0394F2BC447320097CFFA /* SoundGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFED90B22BA899840055154A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFED90C52BA8AB3A0055154A /* GameView.swift */,
+				EFED90C82BA8ABCE0055154A /* AnimacionCargaView.swift */,
+				EFED90CB2BA8B5E40055154A /* PartidaView.swift */,
+				EFED90CE2BA8B8DB0055154A /* RondaActualView.swift */,
+				EFED90D22BA8BD480055154A /* BotonesView.swift */,
+				EFEE3CC02BAB3E70008187DB /* HistorialRondasView.swift */,
+				EFE6BC072BAC9813003DDF51 /* CellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFF039492BC4431F0097CFFA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EFF0394B2BC443330097CFFA /* rondaganada.mp3 */,
+				EF10EC842BC6E36B00D6CC64 /* siguienteronda.wav */,
+				EFF0394A2BC443330097CFFA /* rondaperdida.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFED909C2BA898BE0055154A /* EnigmaShape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFED90AC2BA898BF0055154A /* Build configuration list for PBXNativeTarget "EnigmaShape" */;
+			buildPhases = (
+				EFED90992BA898BE0055154A /* Sources */,
+				EFED909A2BA898BE0055154A /* Frameworks */,
+				EFED909B2BA898BE0055154A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnigmaShape;
+			productName = EnigmaShape;
+			productReference = EFED909D2BA898BE0055154A /* EnigmaShape.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFED90952BA898BE0055154A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EFED909C2BA898BE0055154A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = EFED90982BA898BE0055154A /* Build configuration list for PBXProject "EnigmaShape" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFED90942BA898BE0055154A;
+			productRefGroup = EFED909E2BA898BE0055154A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFED909C2BA898BE0055154A /* EnigmaShape */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFED909B2BA898BE0055154A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFED90A82BA898BF0055154A /* Preview Assets.xcassets in Resources */,
+				EFF0394D2BC443330097CFFA /* rondaganada.mp3 in Resources */,
+				EFED90A52BA898BF0055154A /* Assets.xcassets in Resources */,
+				EFF0394C2BC443330097CFFA /* rondaperdida.mp3 in Resources */,
+				EF10EC852BC6E36B00D6CC64 /* siguienteronda.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFED90992BA898BE0055154A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF039502BC447320097CFFA /* SoundGame.swift in Sources */,
+				EFED90BF2BA89C070055154A /* Ronda.swift in Sources */,
+				EFED90C32BA89DDF0055154A /* FetchError.swift in Sources */,
+				EFED90CC2BA8B5E40055154A /* PartidaView.swift in Sources */,
+				EFEE3CC12BAB3E70008187DB /* HistorialRondasView.swift in Sources */,
+				EFED90A32BA898BE0055154A /* ContentView.swift in Sources */,
+				EFED90A12BA898BE0055154A /* EnigmaShapeApp.swift in Sources */,
+				EFED90D32BA8BD480055154A /* BotonesView.swift in Sources */,
+				EFED90B62BA89A290055154A /* Figura.swift in Sources */,
+				EFED90CF2BA8B8DB0055154A /* RondaActualView.swift in Sources */,
+				EFED90BC2BA89BD50055154A /* GameStore.swift in Sources */,
+				EFE6BC082BAC9813003DDF51 /* CellView.swift in Sources */,
+				EFED90C92BA8ABCE0055154A /* AnimacionCargaView.swift in Sources */,
+				EFED90C62BA8AB3A0055154A /* GameView.swift in Sources */,
+				EFED90B92BA89AA10055154A /* TamanoFigura.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFED90AA2BA898BF0055154A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFED90AB2BA898BF0055154A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFED90AD2BA898BF0055154A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EnigmaShape/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EnigmaShape/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lasalle.edu.EnigmaShape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFED90AE2BA898BF0055154A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EnigmaShape/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EnigmaShape/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lasalle.edu.EnigmaShape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFED90982BA898BE0055154A /* Build configuration list for PBXProject "EnigmaShape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFED90AA2BA898BF0055154A /* Debug */,
+				EFED90AB2BA898BF0055154A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFED90AC2BA898BF0055154A /* Build configuration list for PBXNativeTarget "EnigmaShape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFED90AD2BA898BF0055154A /* Debug */,
+				EFED90AE2BA898BF0055154A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFED90952BA898BE0055154A /* Project object */;
+}
