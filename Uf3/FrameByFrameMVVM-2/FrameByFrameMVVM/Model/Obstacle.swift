@@ -6,6 +6,7 @@ class Obstacle:Sprite, Identifiable{
     var speed:CGFloat
     
     override init(center:CGPoint, width:CGFloat, height: CGFloat){
+
         self.speed = CGFloat.random(in: 3...6)
         super.init(center: center, width: width, height: height)
     }
@@ -18,6 +19,7 @@ class Obstacle:Sprite, Identifiable{
     
     //After obstacle position>yMAX: restart obstacle position and speed
     func restart(){
+        
         self.center.y = 0
         self.center.x = CGFloat.random(in: 50..<UIScreen.main.bounds.maxX-50)
         self.speed = CGFloat.random(in: 3...6)

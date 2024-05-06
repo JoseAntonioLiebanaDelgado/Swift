@@ -32,6 +32,7 @@ struct ContentView: View {
                 viewModel.center.x = geometry.size.width/2
                 viewModel.center.y = geometry.size.height - 20
                 viewModel.createDisplayLink()
+                
             }
         }
     }

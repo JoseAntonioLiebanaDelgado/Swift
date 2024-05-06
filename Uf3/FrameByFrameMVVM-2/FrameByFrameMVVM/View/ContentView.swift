@@ -1,19 +1,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel:ViewModel
+    @EnvironmentObject var viewModel: ViewModel
     
-    var dragGesture: some Gesture{
-        DragGesture().onChanged(){value in
+    var dragGesture: some Gesture {
+        DragGesture().onChanged() { value in
             self.viewModel.movePlayer(value.location)
         }
     }
     
     var body: some View {
-        GeometryReader{geometry in
-            ZStack{
+        GeometryReader { geometry in
+            ZStack {
                 Text("Score: \(viewModel.score)")
-                ForEach(viewModel.obstacles){obstacle in
+                ForEach(viewModel.obstacles) { obstacle in
                     Circle()
                         .fill(Color.red)
                         .frame(width: obstacle.width, height: obstacle.height)
@@ -27,17 +27,20 @@ struct ContentView: View {
                     .gesture(dragGesture)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .onAppear(){
+            .onAppear() {
                 viewModel.player = Player(center: CGPoint(x:geometry.size.width/2,y:geometry.size.height-2*20), width: 100, height: 20)
                 viewModel.createDisplayLink()
             }
-            .alert(isPresented: $viewModel.isGameOverAlertPresented){
-                Alert(title: Text("GameOver"), message: Text("Reinicio del Juego"), dismissButton: .default(Text("Ok")){
-                    viewModel.createDisplayLink()
-                })
+            .alert(isPresented: $viewModel.showRestartAlert) {
+                Alert(
+                    title: Text("¿Quieres volver a jugar?"),
+                    primaryButton: .default(Text("Sí")) {
+                        viewModel.restartGame(geometry: geometry)
+                    },
+                    secondaryButton: .cancel()
+                )
             }
         }
-        
     }
 }
 
