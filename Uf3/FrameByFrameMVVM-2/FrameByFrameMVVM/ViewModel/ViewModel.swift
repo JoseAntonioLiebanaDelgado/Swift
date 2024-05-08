@@ -25,7 +25,8 @@ class ViewModel: ObservableObject {
         
         //create an obstacle every XXs and max obstacles
         if step%(3*60)==0{
-            let obstacle = Obstacle(center: CGPoint(x:CGFloat.random(in: 50..<UIScreen.main.bounds.maxX-50),y:20), width: 30, height: 30)
+            let obstacle = Obstacle(center: CGPoint(x:CGFloat.random(in: 50..<UIScreen.main.bounds.maxX-50),y:20),
+                                    width: 30, height: 30)
             obstacles.append(obstacle)
             
         }
