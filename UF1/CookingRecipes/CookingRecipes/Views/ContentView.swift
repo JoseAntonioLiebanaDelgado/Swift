@@ -1,66 +1,43 @@
-//
-//  ContentView.swift
-//  CookingRecipes
-//
-//  Created by Jose Antonio Liebana Delgado on 6/3/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var recipeStore:RecipeStore
+    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var recipeStore: RecipeStore
     
-    @State var isShowingCreateModal = false
+    @State private var isShowingCreateModal = false
+    
     var body: some View {
         NavigationView {
-            VStack{
-                List{
-                    /*Section {
-                     ForEach(recipeStore.taskList, id: \.self) { task in
-                     //Text("\(task.title ?? "no title")")
-                     
-                     NavigationLink(destination: TaskDetailView(task: task)) {
-                     HStack {
-                     RecipeStatusView(isDone: task.isDone)
-                     Text("\(task.title ?? "")")
-                     Spacer()
-                     }
-                     }
-                     
-                     }.onDelete(perform: recipeStore.deleteTask(at:))
-                     }
-                     }
-                     .background(Color.white)*/
-                    HStack {
-                        NewTaskButton(isShowingCreateModal: $isShowingCreateModal)
-                        Spacer()
+            VStack {
+                List {
+                    Section {
+                        ForEach(recipeStore.recipes, id: \.self) { recipe in
+                            NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
+                                HStack {
+                                    RecipeStatusView(isFavorite: recipe.isFavorite)
+                                    Text(recipe.title ?? "No Title")
+                                    Spacer()
+                                }
+                            }
+                        }
+                        .onDelete(perform: deleteRecipes)
                     }
-                    .padding(.leading)
                 }
+                .background(Color.white)
                 .navigationBarTitle(Text("Recipes"))
+                .navigationBarItems(trailing: Button(action: {
+                    isShowingCreateModal = true
+                }) {
+                    Image(systemName: "plus")
+                })
+                .sheet(isPresented: $isShowingCreateModal) {
+                    RecipeCreateView().environment(\.managedObjectContext, viewContext)
+                }
             }
         }
     }
     
-    
-    
-    struct NewTaskButton: View {
-        @Binding var isShowingCreateModal: Bool
-        
-        var body: some View {
-            Button(
-                action: { self.isShowingCreateModal.toggle()},
-                label: {
-                    Image(systemName: "plus.circle.fill")
-                        .foregroundColor(.red)
-                    Text("New Recipe")
-                        .font(.headline)
-                        .foregroundColor(.red)
-                })
-            .sheet(isPresented: $isShowingCreateModal,
-                   onDismiss:{self.isShowingCreateModal=false}){
-                RecipeCreateView()
-            }
-        }
+    private func deleteRecipes(at offsets: IndexSet) {
+        recipeStore.deleteRecipe(at: offsets)
     }
 }

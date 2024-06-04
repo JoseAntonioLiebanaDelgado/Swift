@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Ingredientes" representedClassName="Ingredientes" syncable="YES">
-        <attribute name="cantidad" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="nombre" attributeType="String"/>
-        <relationship name="ingredientesRecetas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recetas" inverseName="recetaIngredientes" inverseEntity="Recetas"/>
+    <entity name="Ingridient" representedClassName="Ingridient" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="String"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredients" inverseEntity="Recipe"/>
     </entity>
-    <entity name="Recetas" representedClassName="Recetas" syncable="YES">
-        <attribute name="cantidad" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="descripcion" attributeType="String"/>
-        <attribute name="esFavorito" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
-        <attribute name="imagen" optional="YES" attributeType="String"/>
-        <attribute name="instrucciones" attributeType="String"/>
-        <attribute name="nombre" attributeType="String"/>
-        <relationship name="recetaIngredientes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredientes" inverseName="ingredientesRecetas" inverseEntity="Ingredientes"/>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="ingredients" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ingridient" inverseName="recipe" inverseEntity="Ingridient"/>
     </entity>
 </model>

@@ -18,6 +18,38 @@
             endingLineNumber = "3"
             landmarkName = "TaskCreateView"
             landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "02C73E88-326E-4E9B-9B2C-5E35C54780F3 - a3c2a02e626c1f2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tasks.TaskCreateView.init() -&gt; Tasks.TaskCreateView"
+                  moduleName = "Tasks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joseantonioliebanadelgado/Documents/Developer/Swift/UF1/Tasks_Solved/Tasks/Views/TaskCreateView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "425">
+               </Location>
+               <Location
+                  uuid = "02C73E88-326E-4E9B-9B2C-5E35C54780F3 - 14f0b69110aeaea1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tasks.TaskCreateView.init(taskStore: SwiftUI.EnvironmentObject&lt;Tasks.TaskStore&gt;, title: Swift.String, notes: Swift.String, isDone: Swift.Bool, createdAt: Foundation.Date, presentationMode: SwiftUI.Environment&lt;SwiftUI.Binding&lt;SwiftUI.PresentationMode&gt;&gt;, showAlert: Swift.Bool) -&gt; Tasks.TaskCreateView"
+                  moduleName = "Tasks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joseantonioliebanadelgado/Documents/Developer/Swift/UF1/Tasks_Solved/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
