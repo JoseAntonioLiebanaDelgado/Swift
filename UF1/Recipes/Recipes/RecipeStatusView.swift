@@ -1,13 +1,12 @@
 import SwiftUI
 
+// Vista que muestra el estado de una receta (favorita o no)
 struct RecipeStatusView: View {
-    // Propiedad que indica si la receta es favorita.
-    var isFavorite: Bool
-    
+    var isFavorite: Bool  // Indicador de si la receta es favorita
+
     var body: some View {
-        // Imagen de sistema que muestra una estrella llena si es favorita, o una estrella vacía si no.
+        // Mostrar un ícono de estrella lleno si es favorita, o vacío si no
         Image(systemName: isFavorite ? "star.fill" : "star")
-            // Color de la estrella: amarillo si es favorita, gris si no.
-            .foregroundColor(isFavorite ? .yellow : .gray)
+            .foregroundColor(isFavorite ? .yellow : .gray)  // Color amarillo si es favorita, gris si no
     }
 }

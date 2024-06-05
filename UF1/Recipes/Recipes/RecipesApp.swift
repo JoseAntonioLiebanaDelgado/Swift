@@ -2,20 +2,15 @@ import SwiftUI
 
 @main
 struct RecipesApp: App {
-    // Singleton de PersistenceController para manejar el almacenamiento de datos.
-    let persistenceController = PersistenceController.shared
+    let persistenceController = PersistenceController.shared  // Instancia compartida del controlador de persistencia
 
     var body: some Scene {
         WindowGroup {
-            // Obtiene el contexto de Core Data del contenedor de PersistenceController.
-            let context = persistenceController.container.viewContext
-            // Crea una instancia de RecipeStore con el contexto de Core Data.
-            let recipeStore = RecipeStore(context: context)
-            // Establece ContentView como la vista principal y proporciona el contexto y RecipeStore al entorno.
+            let context = persistenceController.container.viewContext  // Obtener el contexto de Core Data
+            let recipeStore = RecipeStore(context: context)  // Crear una instancia de RecipeStore con el contexto
             ContentView()
-                .environment(\.managedObjectContext, context)
-                .environmentObject(recipeStore)
+                .environment(\.managedObjectContext, context)  // Proveer el contexto al entorno de SwiftUI
+                .environmentObject(recipeStore)  // Proveer la instancia de RecipeStore al entorno de SwiftUI
         }
     }
 }
-
