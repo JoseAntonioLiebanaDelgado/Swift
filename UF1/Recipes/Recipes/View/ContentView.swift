@@ -3,7 +3,6 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext  // Contexto de Core Data desde el entorno
     @EnvironmentObject var recipeStore: RecipeStore  // Instancia de RecipeStore desde el entorno
-    
     @State private var isShowingCreateModal = false  // Estado para controlar la presentación del modal de creación de recetas
     
     var body: some View {

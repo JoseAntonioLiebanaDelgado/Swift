@@ -114,13 +114,10 @@
 		FCACFD662C035726004DFBA7 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				FCACFDA12C03589F004DFBA7 /* RecipeStore.swift */,
-				FCACFD9C2C035803004DFBA7 /* Data */,
 				FCACFD672C035726004DFBA7 /* RecipesApp.swift */,
-				FCACFD692C035726004DFBA7 /* ContentView.swift */,
-				FCACFDA82C03733C004DFBA7 /* RecipeStatusView.swift */,
-				FCACFDA62C037172004DFBA7 /* RecipeCreateView.swift */,
-				FCACFDA42C037160004DFBA7 /* RecipeDetailView.swift */,
+				FCFA2F392C1226E400474318 /* ViewModel */,
+				FCACFD9C2C035803004DFBA7 /* Data */,
+				FCFA2F3B2C1226FB00474318 /* View */,
 				FCACFD6B2C035728004DFBA7 /* Assets.xcassets */,
 				FCACFD6D2C035728004DFBA7 /* Preview Content */,
 			);
@@ -163,6 +160,25 @@
 				FCACFD9D2C03583B004DFBA7 /* Persistance.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FCFA2F392C1226E400474318 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCACFDA12C03589F004DFBA7 /* RecipeStore.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCFA2F3B2C1226FB00474318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCACFDA62C037172004DFBA7 /* RecipeCreateView.swift */,
+				FCACFDA42C037160004DFBA7 /* RecipeDetailView.swift */,
+				FCACFDA82C03733C004DFBA7 /* RecipeStatusView.swift */,
+				FCACFD692C035726004DFBA7 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
