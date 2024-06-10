@@ -20,7 +20,7 @@ struct ContentView: View {
                                 }
                             }
                         }
-                        .onDelete(perform: deleteRecipes)  // Permitir eliminación de recetas 
+                        .onDelete(perform: deleteRecipes)  // Permitir eliminación de recetas       
                     }
                 }
                 .background(Color.white)
